@@ -1,0 +1,32 @@
+{
+  "name": "broken-anime-card-api",
+  "version": "1.0.0",
+  "description": "Self-hosted anime card REST API. Real AniList data rendered as SVG cards, zero dependencies, no headless browser.",
+  "keywords": [
+    "anime", "anime-card", "card-api", "anilist", "svg", "api",
+    "rest-api", "zero-dependency", "card-generator", "self-hosted"
+  ],
+  "license": "MIT",
+  "author": "Akewushola Abdulbakri Temitope (brokenvzn) <akewusholaabdulbakri101@gmail.com>",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "bin": { "broken-anime-card-api": "server.js" },
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "require": "./index.js",
+      "import": "./index.mjs"
+    }
+  },
+  "files": ["index.js", "index.mjs", "index.d.ts", "server.js", "README.md", "LICENSE"],
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test test.js",
+    "test:live": "node --test test-live.js"
+  },
+  "engines": { "node": ">=18" },
+  "repository": { "type": "git", "url": "git+https://github.com/Neaterry6/broken-anime-card-api.git" },
+  "bugs": { "url": "https://github.com/Neaterry6/broken-anime-card-api/issues" },
+  "homepage": "https://github.com/Neaterry6/broken-anime-card-api#readme",
+  "sideEffects": false
+}
